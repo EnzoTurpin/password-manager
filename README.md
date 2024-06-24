@@ -24,8 +24,8 @@ Ce projet est une extension Chrome de gestion des mots de passe. Elle permet de 
 1. **Cloner le dépôt :**
 
     ```bash
-    git clone https://github.com/votre-utilisateur/gestionnaire-de-mots-de-passe.git
-    cd gestionnaire-de-mots-de-passe
+    git clone https://github.com/EnzoTurpin/password-manager
+    cd password-manager
     ```
 
 2. **Installer les dépendances Python :**

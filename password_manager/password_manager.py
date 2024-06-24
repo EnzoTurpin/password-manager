@@ -2,25 +2,30 @@ from cryptography.fernet import Fernet
 import json
 import os
 
+
 # Générer une clé et l'enregistrer
 def generate_key():
     key = Fernet.generate_key()
     with open("password_manager/secret.key", "wb") as key_file:
         key_file.write(key)
 
+
 # Charger la clé
 def load_key():
     return open("password_manager/secret.key", "rb").read()
+
 
 # Chiffrement du texte
 def encrypt_text(text, key):
     fernet = Fernet(key)
     return fernet.encrypt(text.encode()).decode()
 
+
 # Déchiffrement du texte
 def decrypt_text(encrypted_text, key):
     fernet = Fernet(key)
     return fernet.decrypt(encrypted_text.encode()).decode()
+
 
 # Fonction pour ajouter un compte
 def add_account(account, email, password, key):
@@ -35,6 +40,7 @@ def add_account(account, email, password, key):
     with open("passwords.json", "w") as file:
         json.dump(data, file, indent=4)
 
+
 # Fonction pour récupérer un compte
 def get_account(account, key):
     with open("passwords.json", "r") as file:
@@ -47,6 +53,7 @@ def get_account(account, key):
     else:
         return None, None
 
+
 # Fonction pour lister tous les comptes
 def list_accounts():
     if os.path.exists("passwords.json"):
@@ -55,6 +62,7 @@ def list_accounts():
             return list(data.keys())
     else:
         return []
+
 
 # Fonction pour supprimer un compte
 def delete_account(account):
@@ -70,6 +78,7 @@ def delete_account(account):
             return False
     else:
         return False
+
 
 # Fonction pour mettre à jour un compte
 def update_account(old_account, new_account, email, password, key):

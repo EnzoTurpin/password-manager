@@ -1,3 +1,4 @@
+/* Styles globaux pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
     width: 300px;
@@ -5,15 +6,17 @@ body {
     margin: 0;
     background-color: #f4f4f9;
     color: #333;
-    box-sizing: border-box; /* Assurez-vous que le padding et la bordure sont inclus dans la taille totale */
+    box-sizing: border-box;
 }
 
+/* Styles pour les titres h2 */
 h2 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
+/* Styles pour les boutons */
 button {
     display: block;
     width: 100%;
@@ -31,10 +34,12 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Styles pour cacher les éléments */
 .hidden {
     display: none;
 }
 
+/* Styles pour les éléments de compte */
 .account {
     display: flex;
     justify-content: space-between;
@@ -78,21 +83,24 @@ button:hover {
     background-color: #c82333;
 }
 
+/* Styles pour les champs de texte, email et mot de passe */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%; /* Assurez-vous que le champ prend toute la largeur */
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Assurez-vous que le padding et la bordure sont inclus dans la taille totale */
+    box-sizing: border-box;
 }
 
+/* Styles pour les formulaires d'ajout et d'édition de compte */
 #addAccountForm, #editAccountForm {
-    text-align: left; /* Assurez-vous que le texte est aligné à gauche */
+    text-align: left;
 }
 
+/* Styles pour les titres h3 dans les formulaires */
 #addAccountForm h3, #editAccountForm h3 {
     color: #333;
     margin-bottom: 10px;
