@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 20px;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    box-sizing: border-box; /* Assurez-vous que le padding et la bordure sont inclus dans la taille totale */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.account-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.account button {
+    width: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.account .edit-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.account .edit-button:hover {
+    background-color: #218838;
+}
+
+.account .delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.account .delete-button:hover {
+    background-color: #c82333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Assurez-vous que le champ prend toute la largeur */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Assurez-vous que le padding et la bordure sont inclus dans la taille totale */
+}
+
+#addAccountForm, #editAccountForm {
+    text-align: left; /* Assurez-vous que le texte est aligné à gauche */
+}
+
+#addAccountForm h3, #editAccountForm h3 {
+    color: #333;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de mots de passe</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h2>Gestionnaire de mots de passe</h2>
+    <div id="menu">
+        <button id="addAccountBtn">Ajouter un compte</button>
+        <button id="listAccountsBtn">Lister les comptes</button>
+    </div>
+
+    <div id="addAccountForm" class="hidden">
+        <h3>Ajouter un compte</h3>
+        <label for="accountName">URL du site:</label>
+        <input type="text" id="accountName"><br>
+        <label for="accountEmail">Email:</label>
+        <input type="email" id="accountEmail"><br>
+        <label for="accountPassword">Mot de passe:</label>
+        <input type="password" id="accountPassword"><br>
+        <button id="saveAccountBtn">Enregistrer</button>
+        <button id="cancelAddBtn">Annuler</button>
+    </div>
+
+    <div id="editAccountForm" class="hidden">
+        <h3>Modifier un compte</h3>
+        <label for="editAccountName">Nom du compte:</label>
+        <input type="text" id="editAccountName"><br>
+        <label for="editAccountEmail">Email:</label>
+        <input type="email" id="editAccountEmail"><br>
+        <label for="editAccountPassword">Mot de passe:</label>
+        <input type="text" id="editAccountPassword"><br>
+        <button id="updateAccountBtn">Mettre à jour</button>
+        <button id="cancelEditBtn">Annuler</button>
+    </div>
+
+    <div id="accountsList" class="hidden">
+        <h3>Comptes enregistrés</h3>
+        <input type="text" id="searchBar" placeholder="Rechercher un compte...">
+        <div id="accounts"></div>
+        <button id="backToMenuBtn">Retour au menu</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
